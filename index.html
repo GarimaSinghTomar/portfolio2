@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 2</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+nav{
+    margin:0;
+    padding:0;
+    position: relative;
+    float:center;
+    background-color: whitesmoke;
+}
+nav ul
+{
+  margin:0;
+  list-style-type: none;
+  padding:0;
+}
+nav ul li a{
+    text-decoration: none;
+    display:block;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+  }
+  nav ul li{
+    margin-right: 1px;
+    background: whitesmoke;
+    float: left;
+    width:150px;
+    text-align: center;
+    box-shadow: 1px 1px 3px white;
+  }
+  nav ul li:first-child {
+    margin-left: 0;
+}
+  .logo {
+    margin:0;
+    text-align:left;
+    display:inline;
+}
+.error {
+  color: red;
+  font-size: 0.6em;
+  display:block;
+width:100%;
+/*text-align:right;*/
+  height:1.2em;
+}
+
+.required::before {
+  content: "*";
+  color: red;
+  margin-right: 3px;
+}
+.d1:hover {
+  transform: scale(1.2); 
+}
+.d2:hover {
+  transform: scale(1.2); 
+}
+.d3{
+  height:200px;
+  width:200px;s
+}
+.d3:hover {
+  transform: scale(1.2); 
+}
+.imageContainer{
+  height:200px;
+    width:200px;
+    margin:10px;
+    display:flex;
+    width:auto;
+    height:auto;
+    justify-content:space-evenly;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header content goes here -->
+    </header>
+    <div class="container">
+        <nav>
+            <!-- Navigation menu goes here -->
+            <ul>
+                <li><a href="#section1">About</a></li>
+                <li><a href="#section2">Work</a></li>
+                <li><a href="#section3">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <main>
+        <h1><b>Welcome to Garima's Portfolio</b></h1>
+        <h2>Hello and welcome! I'm thrilled to have you here.</h2>
+        <p>Throughout these pages, you'll discover my skills,education,interests and my projects.
+Feel free to explore and get to know me better. If you have any questions or would like to connect, please don't hesitate to reach out.
+             I'm always eager to engage in meaningful conversations and collaborations.<br>
+             <br>
+             Thank you for visiting, and I look forward to connecting with you soon!<br>
+             Warm regards,<br>
+             Garima
+        </p>
+        <section id="section1">
+            <h1><b>ABOUT</b></h1>
+            <p>My name is <b>Garima Singh</b>.</p>
+            <h3>Education:</h3>
+            <ul>
+                <li>Currently,I am Purusing BTech in Information Technology from Banasthali Vidyapith,Rajasthan </li>
+                <li>X and XII from Madhavrao Scindia Public School,Bareilly</li>
+                </ul>
+                <h3>Technical Skills:</h3>
+                <ul>
+                    <li>Programming Languages:C, C++, JavaScript,Java </li>
+                    <li>Web Development: HTML,CSS</li>
+                    <li>Database Management: MySQL</li>
+                    <li>Operating Systems: Windows, Linux</li>
+                </ul>
+                <h3>Interests:</h3>
+                <ul>
+                    <li>Reading: Literature</li>
+                    <li>Health and Fitness: Yoga, Meditation</li>
+                    <li>Art and Creativity: Drawing, Painting</li>
+                    <li>Sports:Badminton</li>
+                </ul>
+        </section>
+        
+        <section id="section2">
+            <h1><b>A Small Section of My Work</b></h1>
+            <div class="imageContainer">
+                <div class="d1">
+                    <h3>Project:Hotel Management System</h3>
+                    <a href="hotelwelcome.html"><img src="hotelcover.jpg" /></a>
+                    <span style="z-index:10"></span>
+                </div>
+                <div class="d3">
+                    <h3>Assignment 1 : Book Bazaar</h3>
+                    <a href="Assignment1.html"><img src="bookimage.jpg" /></a>
+                </div>
+                <br>
+                <div class="d2">
+                    <h3>IT 302 Lab Exercises</h3>
+                   <a href="it302Lab.html"><img src="labExercises.png" /></a> 
+            </div>
+            </div>
+        </section>
+        <section id="section3">
+            <h1><b>Contact Me</b></h1><br>
+            <p>Have any questions? Fill out the form and I’ll get you a response soon!</p>
+            <div class="container2">
+                <form action="#" method="POST"  onsubmit="return validateForm()">
+                  <label for="name" class="required">Name:</label><br>
+                  <input type="text" id="name" name="name"><br>
+                  <span id="nameError" class="error"></span>
+
+                  <label for="email" class="required">Email:</label><br>
+                  <input type="email" id="email" name="email"><br>
+                  <span id="emailError" class="error"></span>
+
+                  <label for="message" class="required">Message:</label><br>
+                  <textarea id="message" name="message"></textarea><br>
+                  <span id="messageError" class="error"></span>
+
+                  <button type="submit">Submit</button>
+                </form>
+                <div class="social-media">
+                    <h3>Reach Us on Social Media Handles:</h3>
+                    <p>Stay connected and engage with us on:</p>
+                    <a href="https://www.linkedin.com/in/garima-singh-tomar-05996822a/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bqdu9AEynR3iQuSlx15c%2BQQ%3D%3D" target="_blank">LinkedIn</a>
+                  </div>
+                  </div>
+                <script>   
+                function validateForm(){
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+     var message = document.getElementById('message').value;           
+ var nameError = document.getElementById('nameError');
+  var emailError = document.getElementById('emailError');
+  var messageError = document.getElementById('messageError');
+nameError.textContent = "";
+emailError.textContent = "";
+messageError.textContent = "";
+
+var isValid = true;
+
+if (name.trim() === "") {
+    nameError.textContent = "name is required";
+    isValid = false;
+}  
+if (email.trim() === "") {
+    emailError.textContent = "Email is required";
+    isValid = false;
+} else if (!isValidEmail(email)) {
+    emailError.textContent = "Invalid email address";
+    isValid = false;
+}
+
+if (message.trim() === "") {
+    messageError.textContent = "Message is required";
+    isValid = false;
+}
+return isValid;
+}
+function isValidEmail(email) {
+var re =  /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.\.-]+\.[a-zA-Z]{2,4}$/;
+return re.test(email);
+}    
+                </script>
+        
+        </section>
+        <!-- More sections as needed -->
+    </main>
+    
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+</html>
